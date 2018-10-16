@@ -2,13 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>login page</title>
+    <title>Login Page</title>
 </head>
 <body>
 <h2>Login</h2>
 <form type="post">
-{% csrf_token %}
-    {{ form.as_p }}
+    Username:<br>
+    <input type="text" name="User" value="">
+    <br>
+    <p> Password: Must at least be 8 characters long with special characters.</p>
+    <input type="text" name="Pwd" value="">
+    <br>
+    <br>
     <button type="submit">Sign in</button>
 </form>
 
