@@ -1,7 +1,10 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block title %}Register Page{% endblock %}
 
 {% block head %}
-        <title>Login</title>
+        <title>Registration</title>
 		<link rel = "stylesheet" href = "../../static/accounts/style.css">
 {% endblock %}
 
@@ -9,15 +12,11 @@
 <br>
 <div class="container rounded white shadow">
 	<br>
-    <h1>Welcome</h1>
-    <p>
-        You can log in here
-    </p>
-    <h2>Login</h2>
+    <h1>Register</h1>
     <form method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit">Login</button>
+        {{ form|crispy}}
+        <button type="submit">Submit</button>
     </form>
 	<br>
 </div>

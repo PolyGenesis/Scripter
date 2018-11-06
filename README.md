@@ -55,6 +55,10 @@ Test profile name: test
 
 Test profile PW: cs480_2018
 
+### Running In IDE:
+Make sure that Crispy Forms is installed inside site-packages in the external libraries
+* pip install django-crispy-forms
+
 -----
 
 10/1/2018 - 5:39 pm
