@@ -4,12 +4,15 @@
 {% block title %}Login Page{% endblock %}
 
 {% block body %}
-<div class="container">
+<br>
+<div class="container rounded white shadow">
+    <br>
     <h2>Login</h2>
     <form method="post">
             {% csrf_token %}
             {{ form|crispy }}
             <button type="submit">Login</button>
     </form>
+    <br>
 </div>
 {% endblock %}
