@@ -3,4 +3,4 @@ from django.urls import reverse
 
 
 def login_redirect(request):
-    return redirect(reverse('login'))
+    return redirect(reverse('accounts:login'))

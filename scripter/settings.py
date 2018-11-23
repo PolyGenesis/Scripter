@@ -126,6 +126,9 @@ STATIC_URL = '/static/'
 
 LOGIN_REDIRECT_URL = '/account/'
 
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'scripter/media')
+
 LOGIN_URL = '/account/login/'
 
 LOGIN_EXEMPT_URLS = (

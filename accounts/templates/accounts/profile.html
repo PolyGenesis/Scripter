@@ -11,6 +11,11 @@
     <p>first name: {{ user.first_name}}</p>
     <p>last name: {{ user.last_name }}</p>
     <p>email: {{ user.email }}</p>
+    <p>Description: {{ user.userprofile.description }}</p>
+    <p>Phone #: {{ user.userprofile.phone }}</p>
+    <p>website: {{ user.userprofile.website }}</p>
+    <p>city: {{ user.userprofile.city }}</p>
+    <img src="{{ user.userprofile.image.url }}" width="240">
 	<br>
 </div>
 
