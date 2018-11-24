@@ -8,6 +8,9 @@
 	<br>
 	<h1>HOME</h1>
 	</br>
+	<a href="{{ user.userprofile.current_upload.url }}" class="button">View Current Project</a>
+	<a href="{{ user.userprofile.previous_upload.url }}" class="button">View Last Draft</a>
+	<a href="{{ user.userprofile.upload_changes.url }}" class="button">View Difference</a>
 </div>
 {% endblock %}
 

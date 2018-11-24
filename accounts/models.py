@@ -10,12 +10,16 @@ class UserProfileManager(models.Manager):
 
 class UserProfile(models.Model):
     # User test information (Not production fields)
+    objects = models.Manager()
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     description = models.CharField(max_length=100, default='')
     city = models.CharField(max_length=100, default='')
     website = models.URLField(default='')
     phone = models.IntegerField(default=0)
     image = models.ImageField(upload_to='profile_image', blank=True)
+    current_upload = models.FileField(upload_to='uploads/', blank=True)
+    previous_upload = models.FileField(upload_to='uploads/', blank=True)
+    upload_changes = models.FileField(upload_to='uploads/', blank=True)
 
     test = UserProfileManager() #test custom model manager query
 

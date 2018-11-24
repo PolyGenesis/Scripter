@@ -14,12 +14,12 @@ def register(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             form.save()
-            return redirect(reverse('home'))
+            return redirect(reverse('accounts:home'))
     else:
         form = RegistrationForm()
 
-        args = {'form': form}
-        return render(request, 'accounts/reg_form.html', args)
+    args = {'form': form}
+    return render(request, 'accounts/reg_form.html', args)
 
 
 def view_profile(request):
