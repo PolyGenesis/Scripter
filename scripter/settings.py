@@ -55,7 +55,7 @@ MIDDLEWARE = [
     'scripter.middleware.LoginRequiredMiddleware'
 ]
 
-ROOT_URLCONF = 'accounts.urls'
+ROOT_URLCONF = 'scripter.urls'
 
 TEMPLATES = [
     {
