@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}About Us{% endblock %}
+
+{% block body %}
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <h1 class="text-center">Meet the Team</h1>
+        <p class="text-center">This project is divided among four Computer Science students at Cal Poly Pomona.</p>
+        <hr class="my-4">
+        <p class="text-center">This idea was came about from the idea of simplifying movie scripts and version control.</p>
+        <p class="text-center">
+            <a class="btn btn-primary btn-lg btn-success" href="https://github.com/PolyGenesis/Scripter" role="button">Team GitHub</a>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+      <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'accounts/img/michael_n.jpg' %}" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Michael Nguyen</h5>
+                <p>FrontEnd Developer</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'accounts/img/thana.jpg' %}" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Thana Sithisombath</h5>
+                <p>FrontEnd Developer</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'accounts/img/chris.png' %}" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Chris Villegas</h5>
+                <p>BackEnd Developer</p>
+            </div>
+          </div>
+      </div>
+
+      <div class="col-sm-3">
+          <div class="card mx-auto" style="width: 18rem;">
+            <img class="card-img-top" src="{% static 'accounts/img/michael_o.jpeg' %}" alt="Card image cap">
+            <div class="card-body text-center">
+                <h5 class="card-title">Michael Ortega</h5>
+                <p>BackEnd Developer</p>
+            </div>
+          </div>
+      </div>
+
+      </div>
+</div>
+
+
+{% endblock %}

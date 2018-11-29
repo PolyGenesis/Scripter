@@ -9,10 +9,14 @@ from django.contrib.auth import update_session_auth_hash
 def home(request):
     return render(request, 'accounts/home.html')
 
-
 def view_document(request):
     return render(request, 'accounts/DocumentDisplay.html')
 
+def project(request):
+	return render(request, 'accounts/project.html')
+	
+def about_us(request):
+    return render(request, 'accounts/about_us.html')
 
 def register(request):
     if request.method == 'POST':

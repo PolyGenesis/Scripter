@@ -47,3 +47,31 @@ div ul li a.linkButton{
 	border: 3px solid gold;
  	padding: 20px;
 }
+
+div .carousel-inner > div > img {
+	width: 100%;
+	max-height: 450px;
+	object-fit: cover;
+	overflow:hidden;
+}
+
+.jumbotron{
+    margin-bottom: auto;
+	padding-top: 20px;
+}
+
+.jumbotron > h1 {
+	font-family: "Lucida Console", Monaco, monospace;
+    font-size: 50px;;
+}
+
+.carousel-text{
+	color: white;
+	text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 18vw;
+    object-fit: cover;
+}

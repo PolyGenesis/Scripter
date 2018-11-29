@@ -1,0 +1,30 @@
+{% extends 'index.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block body %}
+<br>
+<div class="container rounded white shadow center-div">
+	<br>
+	<h1>HOME</h1>
+	<br>
+	<div class="rounded" style="background-color: gray; padding: 10px;">
+		<label for="file" style="color: black; font-size: 100%;">Upload a new script...</label>
+		<input type="file" id="file" accept="application/pdf" onfocus="this.value=''" style="color: black;">
+	</div>
+	<br>
+	<br>
+	<br>
+	<h3>Scripts</h3>
+    <div>
+		<ul>
+			<li>
+				<a href="{% url 'accounts:view_document' %}">Demo</a>
+			</li>
+		</ul>
+	</div>
+	<br>
+</div>
+{% endblock %}
+
+
