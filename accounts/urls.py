@@ -20,6 +20,7 @@ urlpatterns = [
     path('profile/edit/', views.edit_profile, name='edit_profile'),
     path('document/', views.view_document, name='view_document'),
     path('change-password/', views.change_password, name='change_password'),
+    path('about_us/', views.about_us, name='about_us'),
 
     path('password_reset/', PasswordResetView.as_view(
             template_name='accounts/reset_password.html',
