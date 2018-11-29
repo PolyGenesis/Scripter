@@ -9,6 +9,11 @@ from django.contrib.auth import update_session_auth_hash
 def home(request):
     return render(request, 'accounts/home.html')
 
+
+def view_document(request):
+    return render(request, 'accounts/DocumentDisplay.html')
+
+
 def register(request):
     if request.method == 'POST':
         form = RegistrationForm(request.POST)
@@ -26,6 +31,7 @@ def view_profile(request):
     args = {'user': request.user}
     return render(request, 'accounts/profile.html', args)
 
+
 def edit_profile(request):
     if request.method == 'POST':
         form = EditProfileForm(request.POST, instance=request.user)
@@ -38,6 +44,7 @@ def edit_profile(request):
         form = EditProfileForm(instance=request.user)
         args = {'form': form}
         return render(request, 'accounts/edit_profile.html', args)
+
 
 def change_password(request):
     if request.method == 'POST':
@@ -53,7 +60,4 @@ def change_password(request):
         form = PasswordChangeForm(user=request.user)
         args = {'form': form}
         return render(request, 'accounts/change_password.html', args)
-
-
-
 
