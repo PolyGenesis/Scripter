@@ -134,7 +134,9 @@ LOGIN_URL = '/account/login/'
 
 LOGIN_EXEMPT_URLS = (
     '/account/logout/',
-    '/account/register/'
+    '/account/register/',
+    '/account/about_us/',
+    ''
 )
 
 EMAIL_HOST = 'localhost'
